@@ -43,8 +43,7 @@ def split_and_combine(test_input):
         if char != " ":
             combined_letters += char
     return combined_letters
-
-result = split_and_combine(test_input)
-
-print('Speed:', speed(time1, time2, len(result)), 'WPM')
+letters = split_and_combine(test_input)
+result = len(letters)/5
+print('Speed:', speed(time1, time2, result), 'WPM')
 print('Error:', mistakes(test1, test_input))
